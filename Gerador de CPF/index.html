@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de CPF</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="container mg-bottom-6" aria-label="Gere um CPF válido">
+    <div>
+      <h1>GERADOR DE CPF VÁLIDO</h1>
+    </div>
+    <div class="gera-cpf-container">
+      <form name="gera-cpf-form" id="gera-cpf-form">
+        <div>
+          <div>
+            <label for="CPF-pontuacao">Gerar CPF com pontuação?</label>
+          </div>
+          <select name="CPF-pontuacao" id="CPF-pontuacao">
+            <option value="true">Sim</option>
+            <option value="false">Não</option>
+          </select>
+        </div>
+        <div class="gerarbtn-div">
+          <button class="calcular-btn" id="gerar-cpf-btn">Gerar novo CPF</button>
+        </div>
+      </form>
+      <div class="labelcpf">
+        <label for="cpf-gerado">CPF Gerado</label>
+      </div>
+      <div id="cpf-gerado-div">
+        <input type="text" name="cpf-gerado" id="cpf-gerado" value="000.000.000-00" readonly>
+        <button id="copiar-cpf-btn">
+          <span>Copiar</span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </section>
+</body>
+
+</html>
